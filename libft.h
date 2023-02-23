@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 13:53:50 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/10 12:40:55 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/23 11:44:41 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <ctype.h>
+# include <limits.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
