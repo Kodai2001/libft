@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 23:52:07 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/10 13:09:34 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:36:45 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (uc_s1[i] > uc_s2[i] || uc_s1[i] < uc_s2[i])
+		if (uc_s1[i] != uc_s2[i])
 			return (uc_s1[i] - uc_s2[i]);
 		i++;
 	}

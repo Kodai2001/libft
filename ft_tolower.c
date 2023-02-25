@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 14:18:29 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 14:51:23 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:26:54 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_tolower(int c)
 {
-	if (c < 65 || c > 90)
-		return (c);
-	return (c + 32);
+	if ('A' <= c && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
 
 // int main()

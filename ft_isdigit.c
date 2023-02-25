@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 01:42:53 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/02 13:11:15 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:13:13 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	return (c >= '0' && c <= '9');
+	return ('0' <= c && c <= '9');
 }
 
 // int main() {

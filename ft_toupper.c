@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 14:07:33 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 14:51:33 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:26:03 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_toupper(int c)
 {
-	if (c < 97 || c > 122)
-		return (c);
-	return (c - 32);
+	if ('a' <= c && c <= 'z')
+		return (c - 32);
+	return (c);
 }
 
 // int main()

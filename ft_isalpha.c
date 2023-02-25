@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 01:42:53 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/01/19 14:22:00 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:12:45 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalpha(int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	return (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'));
 }
 
 // int main() {

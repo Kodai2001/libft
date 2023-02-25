@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 13:53:50 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/23 11:44:41 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:11:40 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <stdint.h>
 
 # define X1 0x01
 # define X2 0x02

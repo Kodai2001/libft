@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 20:01:36 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/02 13:10:59 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 18:36:02 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*mem;
-	size_t	i;
+	unsigned char	*mem;
+	size_t			i;
 
-	mem = (char *)s;
+	mem = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{

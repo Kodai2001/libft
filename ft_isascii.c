@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 13:43:56 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/02 13:11:11 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:14:11 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	return ((c >= 0) && (c <= 127));
+	return (0 <= c && c <= 127);
 }
 
 // int main()

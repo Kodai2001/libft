@@ -6,20 +6,20 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 21:38:07 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/23 12:00:30 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 19:46:53 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	rtnv_of_overflow_and_underflow(int nbrsign)
+static int	check_overflow_underflow(int nbrsign)
 {
 	if (nbrsign == 0)
 		return ((int)LONG_MAX);
 	return ((int)LONG_MIN);
 }
 
-int	check_char(const char *str)
+int	is_char_valid(const char *str)
 {
 	int	i;
 
@@ -50,7 +50,7 @@ int	ft_atoi(const char *str)
 
 	nbr = 0;
 	is_negative = 0;
-	i = check_char(str);
+	i = is_char_valid(str);
 	if ((str[i] != '\0' && str[i] == '-') || str[i] == '+')
 	{
 		is_negative = check_nbrsign(str, i);
@@ -60,17 +60,17 @@ int	ft_atoi(const char *str)
 	{
 		if ((nbr > LONG_MAX / 10) || ((nbr == LONG_MAX / 10) && ((str[i]
 						- '0') > LONG_MAX % 10)))
-			return (rtnv_of_overflow_and_underflow(is_negative));
+			return (check_overflow_underflow(is_negative));
 		nbr = (nbr * 10) + (str[i++] - '0');
 	}
 	if (is_negative == 1)
-		return (-nbr);
+		return (nbr * -1);
 	return (nbr);
 }
 
 // int	main(void)
 // {
-// 	char str[] = " 	\n -2147121471";
+// 	char str[] = " 	\n -2147483649";
 // 	printf("%d\n", atoi(str));
 // 	printf("%d\n", ft_atoi(str));
 // }

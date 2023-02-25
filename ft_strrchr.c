@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 13:22:31 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 15:31:20 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/02/25 17:34:29 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s);
 	if (uc_c == '\0')
 		return ((char *)(s + len));
-	while (len && (s[len - 1] != '\0'))
+	while (len && s[len - 1])
 	{
 		if (s[len - 1] == uc_c)
 			return ((char *)(s + (len - 1)));
