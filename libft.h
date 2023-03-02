@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 13:53:50 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/25 17:11:40 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/02 22:27:59 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdint.h>
-
-# define X1 0x01
-# define X2 0x02
-# define X3 0x04
-# define X4 0x08
-# define X5 0x10
-# define X6 0x20
-# define X7 0x40
-# define X8 0x80
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
