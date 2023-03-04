@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 13:51:59 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/25 17:14:46 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 19:10:28 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	return (32 <= c && c < 127);
+	return (32 <= c && c <= 126);
 }
 
 // int main()

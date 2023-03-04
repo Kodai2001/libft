@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 23:52:07 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/25 17:36:45 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 21:05:51 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*uc_s1;
 	const unsigned char	*uc_s2;
 
-	uc_s1 = s1;
-	uc_s2 = s2;
+	uc_s1 = (const unsigned char *)s1;
+	uc_s2 = (const unsigned char *)s2;
 	i = 0;
 	while (i < n)
 	{

@@ -6,13 +6,13 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 12:04:48 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/10 12:55:40 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:03:23 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_nbrlen(long n)
+static unsigned int	ft_nbrlen(long n)
 {
 	unsigned int	len;
 

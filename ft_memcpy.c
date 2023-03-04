@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 20:26:50 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 14:57:19 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/03 18:03:36 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	if (!dst && !src)
 		return (dst);
-	_src = (char *)src;
+	_src = (const char *)src;
 	_dst = (char *)dst;
 	i = 0;
 	while (i < n)

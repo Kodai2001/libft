@@ -6,13 +6,13 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 15:15:01 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/10 14:14:31 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:14:37 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_count_malloc(char const *s, char c)
+static unsigned int	ft_count_malloc(char const *s, char c)
 {
 	unsigned int	count;
 	unsigned int	i;
@@ -28,7 +28,7 @@ unsigned int	ft_count_malloc(char const *s, char c)
 	return (count);
 }
 
-unsigned int	ft_count_len(char const *str, unsigned char c)
+static unsigned int	ft_count_len(char const *str, unsigned char c)
 {
 	unsigned int	i;
 	unsigned int	len;
@@ -43,7 +43,7 @@ unsigned int	ft_count_len(char const *str, unsigned char c)
 	return (len);
 }
 
-void	*ft_m_free(char **word_arr, unsigned int len)
+static void	*ft_m_free(char **word_arr, unsigned int len)
 {
 	unsigned int	i;
 
@@ -54,7 +54,7 @@ void	*ft_m_free(char **word_arr, unsigned int len)
 	return (NULL);
 }
 
-char	**ft_split_str(char const *str, unsigned int count, unsigned char c,
+static char	**ft_split_str(char const *str, unsigned int count, unsigned char c,
 		char **word_arr)
 {
 	unsigned int	i;
@@ -82,24 +82,22 @@ char	**ft_split_str(char const *str, unsigned int count, unsigned char c,
 
 char	**ft_split(char const *s, char c)
 {
-	unsigned char	uc_c;
 	unsigned int	count;
 	char			**word_arr;
 
-	uc_c = (unsigned char)c;
 	if (!s)
 		return (NULL);
-	count = ft_count_malloc(s, uc_c);
+	count = ft_count_malloc(s, c);
 	word_arr = malloc(sizeof(char *) * (count + 1));
 	if (!word_arr)
 		return (NULL);
-	word_arr = ft_split_str(s, count, uc_c, word_arr);
+	word_arr = ft_split_str(s, count, c, word_arr);
 	return (word_arr);
 }
 
 // int main()
 // {
-//     char *s = "acaacbbb";
+//     char *s = "acaaccbbb";
 //     char c = 'c';
 //     char ** res = ft_split(s, c);
 //     while (res)

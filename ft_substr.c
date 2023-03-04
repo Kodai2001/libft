@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 23:16:35 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 14:47:00 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:27:26 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	i;
-	unsigned int	max_len;
-	char			*sub_s;
+	size_t	i;
+	size_t	max_len;
+	char	*sub_s;
 
 	if (!s || (len <= 0) || (start >= ft_strlen(s)))
 		return (ft_strdup(""));

@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 13:09:21 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 15:30:10 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:27:36 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
-	char			*_str;
+	size_t	i;
+	char	*_str;
 
 	if (!s || !f)
 		return (NULL);

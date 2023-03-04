@@ -53,7 +53,7 @@ ifdef WITH_BONUS
 endif
 
 .c.o:
-	$(CC) -c $< -o $@ ${CFLAGS}
+	$(CC) ${CFLAGS} -c $< -o $@ 
 
 $(NAME): $(OBJS)
 		ar -rcs $(NAME) $(OBJS)

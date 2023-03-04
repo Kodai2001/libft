@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 21:38:07 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/25 19:46:53 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:32:35 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	check_overflow_underflow(int nbrsign)
 	return ((int)LONG_MIN);
 }
 
-int	is_char_valid(const char *str)
+static int	is_char_valid(const char *str)
 {
 	int	i;
 
@@ -30,7 +30,7 @@ int	is_char_valid(const char *str)
 	return (i);
 }
 
-int	check_nbrsign(const char *str, int i)
+static int	check_nbrsign(const char *str, int i)
 {
 	int	is_negative;
 
@@ -44,9 +44,9 @@ int	check_nbrsign(const char *str, int i)
 
 int	ft_atoi(const char *str)
 {
-	long	i;
-	long	nbr;
-	int		is_negative;
+	size_t		i;
+	long long	nbr;
+	int			is_negative;
 
 	nbr = 0;
 	is_negative = 0;
@@ -70,7 +70,7 @@ int	ft_atoi(const char *str)
 
 // int	main(void)
 // {
-// 	char str[] = " 	\n -2147483649";
+// 	char str[] = " 	\n -2147483647";
 // 	printf("%d\n", atoi(str));
 // 	printf("%d\n", ft_atoi(str));
 // }

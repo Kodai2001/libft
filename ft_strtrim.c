@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 14:24:00 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/11 14:42:42 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:27:47 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned int	len;
-	char			*trimmed_s1;
+	size_t	len;
+	char	*trimmed_s1;
 
 	if (!s1 || !set)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 14:59:51 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/25 17:33:24 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 21:04:26 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
+	size_t				i;
 	const unsigned char	*uc_s1;
 	const unsigned char	*uc_s2;
-	size_t				i;
 
 	if (n == 0)
 		return (0);
@@ -36,11 +36,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-// int main()
+// int	main(void)
 // {
-//     char s1[] = "aiueo";
-//     char s2[] = "aiue\0o";
+// 	char s1[] = "aiueo";
+// 	char s2[] = "aiueo";
 
-//     printf("%d\n", ft_strncmp(s1, s2, 6));
-//     printf("%d\n", strncmp(s1, s2, 6));
+// 	printf("%d\n", ft_strncmp(s1, s2, 5));
+// 	printf("%d\n", strncmp(s1, s2, 5));
 // }

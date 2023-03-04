@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 14:18:29 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/02/25 17:26:54 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:25:28 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_tolower(int c)
 {
 	if ('A' <= c && c <= 'Z')
-		return (c + 32);
+		return (c + ('a' - 'A'));
 	return (c);
 }
 

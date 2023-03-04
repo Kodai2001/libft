@@ -6,7 +6,7 @@
 /*   By: hayashikdi <hayashikdi@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 11:25:16 by hayashikdi        #+#    #+#             */
-/*   Updated: 2023/01/19 11:40:49 by hayashikdi       ###   ########.fr       */
+/*   Updated: 2023/03/04 20:11:46 by hayashikdi       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, sizeof(char));
+	if (fd < 0)
+		return ;
+	write(fd, &c, 1);
 }
 
 // int main()
